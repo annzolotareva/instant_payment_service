@@ -1,0 +1,43 @@
+POST http://localhost:8080/account
+Content-Type: application/json
+
+{"owner": "Anna", "email": "anna00@gmail.com","count": 20000}
+
+###
+POST http://localhost:8080/account
+Content-Type: application/json
+
+{"owner": "Anna", "email": "anna00@gmail.com","count": 200000}
+
+###
+POST http://localhost:8080/account
+Content-Type: application/json
+
+{"owner": "Denis", "email": "deniska@gmail.com", "count": 45000}
+
+###
+GET http://localhost:8080/accounts
+
+###
+GET http://localhost:8080/account/900fc77d-a17d-40c8-b669-01fac999d73b
+
+###
+GET http://localhost:8080/person/deniska@gmail.com
+
+###
+PUT http://localhost:8080/account/refill
+Content-Type: application/json
+
+{"id": "1f307984-da60-41ff-a4c2-be9d30c85d1b", "amount": 3000}
+
+###
+PUT http://localhost:8080/account/withdrawal
+Content-Type: application/json
+
+{"id": "", "amount": 500000}
+
+###
+PUT http://localhost:8080/account/change
+Content-Type: application/json
+
+{"from": "", "to": "", "amount": 2525}
